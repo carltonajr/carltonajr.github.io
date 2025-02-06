@@ -1,1 +1,29 @@
-
+body {
+    background-color: #E6DED4;
+    color: #303030;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    text-decoration: none;
+}
+nav {
+    height:60px;
+    width:550px;
+    padding:5px;
+    line-height:30px;
+}
+footer {
+    text-align:center;
+    margin-right:200px;
+}
+header {
+    text-align:center;
+    font-style: italic;
+}
+button  {
+    font-size: 85%;
+}
+a {
+    text-align:right;
+    text-decoration: none;
+    color: #303030;
+}
