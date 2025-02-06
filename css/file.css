@@ -1,5 +1,4 @@
 body {
-    background-color: #F7F572;
     color: #303030;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
@@ -8,8 +7,8 @@ body {
 #carltons_links {
     height:60px;
     width:550px;
-    /*padding:5px;*/
-    /*line-height:30px;*/
+    float: left;
+    
 }
 footer {
     text-align:center;
