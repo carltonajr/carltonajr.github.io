@@ -8,7 +8,8 @@ body {
     width:200px;
     height:500px;
     float: left;
-image {
+
+a.img_link {
     width:15px;
     height:15px;
 }
