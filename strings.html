@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Test Page</title>
+    <script>
+        function checkPalindrome() {
+            var str = document.getElementById("inputString").value.toLowerCase().replace(/[^a-zA-Z0-9]/g, ''); // Get the input value and remove non-alphanumeric characters
+            var len = str.length;
+            for (var i = 0; i < len / 2; i++) {
+                if (str[i] !== str[len - 1 - i]) {
+                    document.getElementById("result").innerHTML = "The given string is not a palindrome.";
+                    return;
+                }
+            }
+            document.getElementById("result").innerHTML = "The given string is a palindrome!";
+        }
+    </script>
+</head>
+<body>
+    <link rel='stylesheet' href='week5.css'>
+  <header>Palindrome Test Page</header>
+  <nav>
+    <h3>
+        |Directory|<br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\index_2nd_upload.html">Index Page I</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\boards_2nd_upload.html">Boards Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\game.html">Game Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\strings.html">Palindrome Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\strings_V2.html">User Input Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\sounds.html">Sounds Page</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\index_week_4.html">Index Page II</a><br>
+    <a href="C:\Users\E4D User\Documents\CSC102\Week 5\Final Project.html">Final Project</a>
+    </h3>
+</nav>
+
+Please enter a word or number to check if it is a palindrome.<br><br>  
+<input type="text" id="inputString" placeholder="Enter a string">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="result"></p>
+    <footer>
+        Carlton A.<br>
+        University of Advancing Technology<br>
+        2625 W. Baseline Rd., Tempe, AZ 85283
+    </footer>
+</body>
+</html>
