@@ -4,7 +4,7 @@ body {
     text-align:center;
     text-decoration: none;
 }
-#carltons_links {
+#links {
     width:200px;
     height:500px;
     float: left;
@@ -19,15 +19,11 @@ footer {
     text-align:center;
     margin-right:200px;
 }
-header {
-    text-align:center;
-    font-style: italic;
-}
-button  {
-    font-size: 85%;
-}
 a {
     text-align:right;
     text-decoration: none;
     color: #303030;
+}
+.rounded_img {
+    border-radius: 5%;
 }
