@@ -8,12 +8,10 @@ body {
     width:200px;
     height:500px;
     float: left;
-
+}
 .img_link {
     width:5px;
     height:5px;
-}
-    
 }
 footer {
     text-align:center;
