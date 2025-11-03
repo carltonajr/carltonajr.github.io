@@ -5,14 +5,13 @@
 </head>
 <body>
     <link rel="stylesheet" href="css/file.css">
-    <div id="nav-placeholder"></div>
     <img src="images_logos/growth word logo.png" alt="Company Logo" class="rounded_img">
 </body>
-  <script>
+<div id="nav-placeholder"></div>
+<script>
     fetch("https://carltonajr.github.io/page_template.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-      });
-  </script>
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById("nav-placeholder").innerHTML = data;
+    }); </script>
 </html>
