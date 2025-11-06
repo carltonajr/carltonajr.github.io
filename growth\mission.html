@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>growth - Home</title>
+</head>
+    <div id="template"></div>
+<body>
+    <link rel="stylesheet" href="css/file.css">
+    <a href="growth.html">home</a><br>
+    <a href="growth\mission.html">mission</a><br>
+    
+</body>
+
+<script>
+    fetch("https://carltonajr.github.io/page_template.html")
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById("template").innerHTML = data;
+    }); </script>
+</html>
