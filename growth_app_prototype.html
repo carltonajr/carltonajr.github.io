@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>growth - Brand</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/file.css">
+    <a href="growth.html">home</a><br>
+    <a href="growth_mission.html">mission</a><br>
+    <a href="growth_brand_assignment.html">branding</a><br>
+    <a href="growth_ui.html">ui</a><br>
+    <section>
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+        width="800" height="450" src="https://embed.figma.com/proto/0mUzcbOjbuJ7hT6Cf3uTiB/Growth-Prototype---iOS?node-id=1-2&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share"
+        allowfullscreen></iframe>
+    </section>
+</body>
+<div id="template"></div>
+<script>
+    fetch("https://carltonajr.github.io/growth_page_template.html")
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById("template").innerHTML = data;
+    }); </script>
+</html>
