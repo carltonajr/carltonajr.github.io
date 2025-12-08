@@ -4,17 +4,81 @@
 <title>growth - Brand</title>
 </head>
 <body>
-    <link rel="stylesheet" href="css/file.css">
-    <a href="growth.html">home</a><br>
-    <a href="growth_mission.html">mission</a><br>
-    <a href="growth_brand_assignment.html">branding</a><br>
-    <a href="growth_app_prototype.html">prototype</a><br>
+    <!-- Your Navigation Menu -->
+    <div class="nav-links">
+        <a href="growth.html">Home</a>
+        <a href="growth_mission.html">Mission</a>
+        <a href="growth_brand_assignment.html">Branding</a>
+        <a href="growth_app_prototype.html">Prototype</a>
+    </div>
+
+    <!-- Blog Header -->
+    <div class="header">
+        <h2>Blog Name</h2>
+    </div>
+
+    <!-- Blog Layout -->
+    <div class="row">
+
+        <!-- Left Column -->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+            </div>
+
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="rightcolumn">
+
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+            </div>
+
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Where your external template will be injected -->
+    <div id="template"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+    <!-- Template Loader Script -->
+    <script>
+        fetch("TEMPLATE_FILE_NAME_HERE.html")  // you will fill this in later
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("template").innerHTML = data;
+            });
+    </script>
+
 </body>
-<div id="template"></div>
-<script>
-    fetch("https://carltonajr.github.io/growth_page_template.html")
-    .then(response => response.text())
-    .then(data => {
-    document.getElementById("template").innerHTML = data;
-    }); </script>
 </html>
+
