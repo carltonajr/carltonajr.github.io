@@ -13,9 +13,13 @@ body {
     width:5px;
     height:5px;
 }
-footer {
-    text-align:center;
-    margin-right:200px;
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    color: white;
+    margin-top: 20px;
 }
 a {
     text-align:right;
