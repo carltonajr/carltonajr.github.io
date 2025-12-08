@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>growth - Brand</title>
+</head>
+<body>
+    <link rel="stylesheet" href="css/file.css">
+    <a href="growth.html">home</a><br>
+    <a href="growth_mission.html">mission</a><br>
+    <a href="growth_brand_assignment.html">branding</a><br>
+    <a href="growth_app_prototype.html">prototype</a><br>
+</body>
+<div id="template"></div>
+<script>
+    fetch("https://carltonajr.github.io/growth_page_template.html")
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById("template").innerHTML = data;
+    }); </script>
+</html>
